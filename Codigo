@@ -5,10 +5,12 @@
 #include <set>
 #include <iomanip>
 #include <string>
+
 using namespace std;
 const int TAMANHO = 5;
 const int MAX_JOGADORES = 5;
 const int MAX_NUMERO = 75;
+
 void gerarCartela(int cartela[TAMANHO][TAMANHO]) {
     set<int> numerosUsados;
     for (int i = 0; i < TAMANHO; i++) {
@@ -22,6 +24,7 @@ void gerarCartela(int cartela[TAMANHO][TAMANHO]) {
         }
     }
 }
+
 void imprimirCartelas(int numJogadores, string jogadores[MAX_JOGADORES], int cartelas[MAX_JOGADORES][TAMANHO][TAMANHO], bool marcados[MAX_JOGADORES][TAMANHO][TAMANHO]) {
     cout << "\nCartelas Atualizadas:\n";
     for (int p = 0; p < numJogadores; p++) {
